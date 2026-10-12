@@ -1,10 +1,10 @@
 # Collage Infrastructure — Website
 
-One-page static site approved for Collage Infrastructure. No frameworks, tracking, or third-party dependencies.
+One-page static site for Collage Infrastructure. No frameworks, tracking, or third-party dependencies.
 
 ## Preview
 
-Open `index.html` in a desktop or mobile browser. All logo assets are local. The site displays the approved wordmark *without small circles* in the upper-left, and the original large overlapping-circles icon on the right.
+Open `index.html` in a desktop or mobile browser. All logo assets are local. The site displays the corrected wordmark *without small circles or the stray black SVG artifact* in the upper-left, and the original large overlapping-circles icon on the right.
 
 ## Publish using GitHub Pages
 
@@ -34,3 +34,9 @@ Website DNS records are independent of email DNS records. **Do not delete** exis
 ## Edits
 
 Text lives in `index.html`. Update the headline and description in `<main>` plus page metadata in `<head>` if the copy changes.
+
+## Replacing an existing GitHub Pages deployment
+
+Open the repository Code tab → Add file → Upload files, then upload **the contents** of this replacement folder. Commit directly to `main`. GitHub may require removing files with the same names first through the web UI; the simplest reliable method is to open `index.html` and paste the revised source using GitHub’s pencil editor, then replace `assets/collage-wordmark.svg` similarly. The files in this package are complete. Keep `CNAME` and email DNS records unchanged.
+
+The layout is designed to fit common desktop viewport heights without vertical scrolling. On exceptionally short or narrow/mobile screens, content may scroll to preserve readability rather than hide text.
